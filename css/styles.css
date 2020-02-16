@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+}
+
+body * {
+    font-family: Nunito Sans;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #131313;
+}
+
+.box {
+    max-width: 1250px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-content {
+    justify-content: space-around;
+    height: 83px;
+    align-items: center;
+}
+
+.title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.logo {
+    color: #E3B873;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.header-nav_link {
+    margin: 0px 0px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.nav_link {
+    width: 445px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call {
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    border: 0px;
+    padding: 13px 33px;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.preview {
+    background-image: url("../images/main.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0 355px rgba(0, 0, 0, 0.6) inset;
+    height: 707px;
+}
+
+.flex-preview {
+    padding-top: 194px;
+    display: flex;
+    padding-left: 134px;
+    flex-direction: column;
+}
+
+.button_calc {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.0);
+    box-shadow: none;
+    width: 207px;
+    height: 51px;
+    border-radius: 2px;
+    padding: 19px 40px;
+}
+
+.button_submit {
+    padding: 19px 22px;
+    margin-left: 20px;
+}
+
+.button:hover {
+    background: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.main-h1 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.main-p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.rostov {
+    color: #E3B873;
+}
