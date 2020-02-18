@@ -11,9 +11,16 @@ header {
     background-color: #131313;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .box {
-    max-width: 1250px;
-    padding: 0px 15px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
 }
@@ -22,17 +29,6 @@ header {
     justify-content: space-around;
     height: 83px;
     align-items: center;
-}
-
-.title {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    color: #E3B873;
 }
 
 .logo {
@@ -44,21 +40,23 @@ header {
     text-transform: uppercase;
 }
 
+.ul_link {
+    padding: 0px;
+    width: 445px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
 .header-nav_link {
-    margin: 0px 0px;
     color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-decoration: none;
-}
-
-.nav_link {
-    width: 445px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-transform: uppercase;
 }
 
 .call {
@@ -66,6 +64,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.call_link {
+    text-decoration: underline;
+    color: #E3B873;
 }
 
 .button {
@@ -84,7 +87,7 @@ header {
     text-transform: uppercase;
 }
 
-.preview {
+.section_1 {
     background-image: url("../images/main.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -93,7 +96,7 @@ header {
     height: 707px;
 }
 
-.flex-preview {
+.flex-section_1 {
     padding-top: 194px;
     display: flex;
     padding-left: 134px;
@@ -115,7 +118,7 @@ header {
     margin-left: 20px;
 }
 
-.button:hover {
+.button_calc:hover {
     background: #E3B873;
     border: 1px solid #E3B873;
 }
@@ -145,4 +148,130 @@ header {
 
 .rostov {
     color: #E3B873;
+}
+
+.section_2 {
+    background: #131313;
+    height: 1074px;
+}
+
+.ul_section_2 {
+    width: 623px;
+}
+
+.link_jk {
+    text-decoration: none;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding-bottom: 6.68px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.link_jk:hover {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.box_column {
+    flex-direction: column;
+    padding-top: 107px;
+    padding-right: 134.55px;
+    padding-left: 134.45px;
+    padding-bottom: 90.72px;
+}
+
+.div_example {
+    width: 50%;
+    margin-left: 492px;
+}
+
+.example {
+    width: 50%;
+    margin-bottom: 34px;
+}
+
+.section_2-h2 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 34px;
+    margin-top: 45px;
+    margin-right: 239px;
+}
+
+.example h3 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 9px;
+}
+
+.section_2-p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    width: 442px;
+    margin-bottom: 42px;
+    margin-right: 50px;
+}
+
+.example span {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.image_2 {
+    margin-top: 45px;
+}
+
+.slider button:nth-child(n+2):nth-child(-n+4) {
+    width: 9.6px;
+    height: 9.6px;
+    margin-right: 17.5px;
+    padding: 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+}
+
+.slider button:nth-child(n+2):nth-child(-n+4):hover {
+    background: #FFFFFF;
+}
+
+.slider button:first-child {
+    width: 41px;
+    height: 13px;
+    margin-right: 29.5px;
+    padding: 0;
+    border: none;
+    background: url(../images/left_arrow.svg);
+}
+
+.slider button:last-child {
+    width: 41px;
+    height: 13px;
+    margin-left: 12px;
+    padding: 0;
+    border: none;
+    background: url(../images/right_arrow.svg);
 }
