@@ -59,6 +59,10 @@ header {
     text-transform: uppercase;
 }
 
+.header-nav_link:hover {
+    color: #E3B873;
+}
+
 .call {
     width: 285px;
     display: flex;
@@ -178,10 +182,7 @@ header {
 
 .box_column {
     flex-direction: column;
-    padding-top: 107px;
-    padding-right: 134.55px;
-    padding-left: 134.45px;
-    padding-bottom: 90.72px;
+    padding: 107px 134.55px 0px 134.45px;
 }
 
 .div_example {
@@ -189,12 +190,12 @@ header {
     margin-left: 492px;
 }
 
-.example {
+.example div {
     width: 50%;
     margin-bottom: 34px;
 }
 
-.section_2-h2 {
+.section_2 h2 {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
@@ -219,7 +220,7 @@ header {
     margin-bottom: 9px;
 }
 
-.section_2-p {
+.section_2 p {
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -242,6 +243,11 @@ header {
 
 .image_2 {
     margin-top: 45px;
+}
+
+.slider {
+    margin-top: 79.64px;
+    align-items: center;
 }
 
 .slider button:nth-child(n+2):nth-child(-n+4) {
@@ -274,4 +280,145 @@ header {
     padding: 0;
     border: none;
     background: url(../images/right_arrow.svg);
+}
+
+.section_3 {
+    margin-top: -300px;
+    height: 1074px;
+}
+
+.box_section_3 {
+    flex-direction: column;
+    padding: 0px 134.55px 0px 134.45px;
+    align-items: center;
+}
+
+.section_3 h3 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.camera::before,
+.camera::after {
+    content: "";
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
+    border-radius: 30px;
+    margin: 0px 7.76px;
+}
+
+.camera {
+    align-items: center;
+    justify-content: center;
+    margin: 12.79px auto 31.21px auto;
+}
+
+.player {
+    background-image: url('../images/repairs.png');
+    box-shadow: 0 0 0 355px rgba(0, 0, 0, 0.6) inset;
+    width: 817px;
+    height: 434px;
+    margin: 0px auto 62.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player button {
+    background: #E3B873;
+    box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+    border-radius: 45px;
+    width: 85px;
+    height: 85px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 6px;
+}
+
+.box_section_3 p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    width: 681px;
+    height: 130.91px;
+    margin-bottom: 127.92px;
+}
+
+.box_section_3 p::before {
+    content: "";
+    width: 55px;
+    height: 1.54px;
+    background: #E3B873;
+    border-radius: 30px;
+    margin: 0px 7.76px;
+    display: flex;
+    margin: 0 auto 34.64px auto;
+}
+
+.input_box {
+    width: 769px;
+    height: 51px;
+    margin-bottom: 33.24px;
+}
+
+.lab {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.input {
+    width: 231px;
+    height: 17px;
+    border: 0px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    padding: 0px;
+}
+
+input::-webkit-input-placeholder {
+    color: #363636;
+}
+
+.lab::before {
+    content: "Name";
+    margin-bottom: 4px;
+}
+
+.lab::after {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    content: "";
+    margin-top: 7px;
+}
+
+.checkbox {
+    margin-right: 8.62px;
+}
+
+.lacheck {
+    display: flex;
+    justify-content: center;
+}
+
+.button__send {
+    width: 200px;
+    height: 51px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 27px;
 }
