@@ -89,6 +89,8 @@ header {
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
 }
 
 .section_1 {
@@ -262,6 +264,8 @@ header {
 
 .slider button:nth-child(n+2):nth-child(-n+4):hover {
     background: #FFFFFF;
+    cursor: pointer;
+    outline: none;
 }
 
 .slider button:first-child {
@@ -271,6 +275,8 @@ header {
     padding: 0;
     border: none;
     background: url(../images/left_arrow.svg);
+    cursor: pointer;
+    outline: none;
 }
 
 .slider button:last-child {
@@ -280,11 +286,13 @@ header {
     padding: 0;
     border: none;
     background: url(../images/right_arrow.svg);
+    cursor: pointer;
+    outline: none;
 }
 
 .section_3 {
     margin-top: -300px;
-    height: 1074px;
+    height: 1031px;
 }
 
 .box_section_3 {
@@ -328,6 +336,7 @@ header {
     margin: 0px auto 62.5px;
     justify-content: center;
     align-items: center;
+
 }
 
 .player button {
@@ -341,6 +350,8 @@ header {
     display: flex;
     justify-content: center;
     padding-left: 6px;
+    cursor: pointer;
+    outline: none;
 }
 
 .box_section_3 p {
@@ -373,7 +384,7 @@ header {
     margin-bottom: 33.24px;
 }
 
-.lab {
+.lab1 {
     display: flex;
     flex-direction: column;
     font-size: 13px;
@@ -395,24 +406,55 @@ input::-webkit-input-placeholder {
     color: #363636;
 }
 
-.lab::before {
+.lab1::before {
     content: "Name";
     margin-bottom: 4px;
 }
 
-.lab::after {
+.lab2::before {
+    content: "Phone";
+    margin-bottom: 4px;
+}
+
+.lab1::after {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     content: "";
     margin-top: 7px;
 }
 
-.checkbox {
-    margin-right: 8.62px;
-}
-
-.lacheck {
+.checkbox1 {
     display: flex;
     justify-content: center;
+}
+
+.checkbox12 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*TODO привязать отображение по состоянию checked*/
+.checkbox1 input {
+    display: none;
+}
+
+.checkbox1 div::before {
+    content: "";
+    background: #E3B873;
+    border-radius: 1px;
+    height: 18px;
+    width: 18px;
+}
+
+.checkbox1 div::after {
+    content: url('../images/V_check.svg');
+    left: 4px;
+    top: -1px;
+    position: absolute;
+}
+
+.source {
+    margin-left: 8.62px;
 }
 
 .button__send {
@@ -421,4 +463,93 @@ input::-webkit-input-placeholder {
     font-style: normal;
     font-size: 13px;
     line-height: 27px;
+}
+
+.section_4 {
+    height: 733px;
+}
+
+.box_section_4 {
+    flex-direction: column;
+    padding: 0px 134.55px 0px 134.45px;
+    align-items: center;
+}
+
+.section_4 h3 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.redecor {
+    background: url('../images/types_1.jpg');
+    width: 392px;
+    height: 421px;
+}
+
+.overhau {
+    background: url('../images/types_2.jpg');
+    width: 392px;
+    height: 421px;
+}
+
+.designer_repair {
+    background: url('../images/types_3.jpg');
+    width: 392px;
+    height: 421px;
+}
+
+.h_redecor,
+.h_overhau,
+.h_designer_repair {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin: 294px 31px 0px 31px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding: 25px 0px 0px 34px;
+    height: 286px;
+}
+
+.ul_redecor,
+.ul_overhau,
+.ul_designer_repair {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-position: inside
+}
+
+.price_redecor,
+.price_overhau,
+.price_designer_repair {
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 228px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -26px;
 }
