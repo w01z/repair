@@ -553,3 +553,9 @@ input::-webkit-input-placeholder {
     align-items: center;
     margin-top: -26px;
 }
+
+.types_of_repair {
+    display: flex;
+    width: 1236px;
+    justify-content: space-between;
+}
